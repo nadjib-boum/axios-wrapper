@@ -2,7 +2,7 @@ import HTTPClient from "./index";
 
 const httpClient = new HTTPClient("https://jsonplaceholder.typicode.com");
 
-type ApiResponse<T = any> = {
+export type ApiResponse<T = any> = {
   status: "success";
   data: T;
 };
